@@ -32,7 +32,7 @@
               <router-link class="dropdown-item" to="/about">About</router-link>
               <div class="dropdown-divider"></div>
               <router-link class="dropdown-item" to="/awslogin"
-                >Aws</router-link
+                >Aws Login</router-link
               >
             </div>
           </li>
