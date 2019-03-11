@@ -60,13 +60,17 @@ function clockready() {
       $("#hour")[0].style[prop] = "rotate(" + hourAngle + "deg)";
     }
   }
-
-  startClock();
+  setInterval(startClock, 1);
 }
 export default {
   name: "Clock",
   props: {
     msg: String
+  },
+  mounted() {
+    clockready();
+    // eslint-disable-next-line no-console
+    console.log("MOUNT TEMPLATES");
   }
 };
 </script>
